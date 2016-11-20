@@ -15,7 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".dice"></activity>
+        <activity
+            android:name="id.sch.smktelkom_mlg.project.xirpl201101928.playluck.dice"
+            android:label="dice"
+            android:parentActivityName="id.sch.smktelkom_mlg.project.xirpl201101928.playluck.MainActivity" >
+        </activity>
     </application>
 
 </manifest>
