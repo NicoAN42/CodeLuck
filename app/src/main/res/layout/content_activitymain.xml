@@ -34,12 +34,16 @@
             android:src="@drawable/dice"
             android:scaleType="fitCenter"
             android:layout_weight="1"
+            android:id="@+id/dice"
+
             android:layout_gravity="right"
             android:background="#FFFFFF"/>
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/rps"
+            android:id="@+id/rps"
+
             android:layout_gravity="left"
             android:scaleType="fitCenter"
             android:layout_weight="1"

@@ -7,8 +7,11 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
+
+import id.sch.smktelkom_mlg.project.xirpl201101928.playluck.R;
 
 
 public class dice extends AppCompatActivity {
@@ -47,6 +50,10 @@ int cpuPoints = 0, playerPoints = 0;
                 }
                 if(playerThrow > cpuThrow){
                     playerPoints++;
+                }
+                if(playerThrow == cpuThrow) {
+                    Toast.makeText(dice.this, "Draw !", Toast.LENGTH_SHORT).show();
+
                 }
 
                 tv_cpu.setText("CPU: " + cpuPoints);
