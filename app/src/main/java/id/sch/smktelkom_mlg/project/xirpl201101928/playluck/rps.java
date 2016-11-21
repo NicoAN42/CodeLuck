@@ -23,7 +23,7 @@ public class rps extends AppCompatActivity {
     Button b_rock, b_paper, b_scissors;
     ImageView iv_cpu, iv_me;
 
-    String myChoice, cpuChoice;
+    String myChoice, cpuChoice, result;
 
     Random r;
 
@@ -44,24 +44,24 @@ public class rps extends AppCompatActivity {
         this.b_rock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myChoice = "rock";
-                calculate();
+                rps.this.myChoice = "rock";
+                rps.this.calculate();
             }
         });
 
         this.b_paper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myChoice = "paper";
-                calculate();
+                rps.this.myChoice = "paper";
+                rps.this.calculate();
             }
         });
 
         this.b_scissors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myChoice = "scissors";
-                calculate();
+                rps.this.myChoice = "scissors";
+                rps.this.calculate();
             }
         });
     }
@@ -79,27 +79,27 @@ public class rps extends AppCompatActivity {
             this.iv_cpu.setImageResource(drawable.scissors);
         }
 
-        String result;
+
         if (this.myChoice.equals("rock") && this.cpuChoice.equals("paper")) {
-            result = "you lose";
+            this.result = "you lose";
         } else if (this.myChoice.equals("rock") && this.cpuChoice.equals("scissors")) {
-            result = "you win";
+            this.result = "you win";
         } else if (this.myChoice.equals("paper") && this.cpuChoice.equals("rock")) {
-            result = "you win";
+            this.result = "you win";
         } else if (this.myChoice.equals("paper") && this.cpuChoice.equals("scissors")) {
-            result = "you lose";
+            this.result = "you lose";
         } else if (this.myChoice.equals("scissors") && this.cpuChoice.equals("paper")) {
-            result = "you win";
+            this.result = "you win";
         } else if (this.myChoice.equals("scissors") && this.cpuChoice.equals("rock")) {
-            result = "you lose";
+            this.result = "you lose";
         } else if (this.myChoice.equals("rock") && this.cpuChoice.equals("rock")) {
-            result = "draw";
+            this.result = "draw";
         } else if (this.myChoice.equals("paper") && this.cpuChoice.equals("paper")) {
-            result = "draw";
+            this.result = "draw";
         } else if (this.myChoice.equals("scissors") && this.cpuChoice.equals("scissors")) {
-            result = "draw";
+            this.result = "draw";
         }
 
-        Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, this.result, Toast.LENGTH_SHORT).show();
     }
 }
