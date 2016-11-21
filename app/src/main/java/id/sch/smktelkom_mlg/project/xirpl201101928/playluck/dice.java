@@ -1,17 +1,19 @@
 package id.sch.smktelkom_mlg.project.xirpl201101928.playluck;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
 
-import id.sch.smktelkom_mlg.project.xirpl201101928.playluck.R;
+
 
 
 public class dice extends AppCompatActivity {
@@ -32,7 +34,6 @@ int cpuPoints = 0, playerPoints = 0;
 
         tv_cpua = (TextView) findViewById(R.id.tv_cpu);
         tv_playera = (TextView) findViewById(R.id.tv_player);
-
 
         r = new Random();
         iv_playera.setOnClickListener(new View.OnClickListener() {
