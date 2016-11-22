@@ -17,21 +17,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button db = (Button) this.findViewById(R.id.db);
 
-        db.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this.getApplicationContext(), dice.class);
-                MainActivity.this.startActivity(i);
-            }
-        });
-        Button dr = (Button) this.findViewById(R.id.dr);
-        dr.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this.getApplicationContext(), rps.class);
-                MainActivity.this.startActivity(intent);
-            }
-        });
 }}
