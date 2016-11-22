@@ -52,10 +52,4 @@
         android:textSize="32dp"
         />
 
-    <Button
-        android:text="Start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/start"
-        style="@android:style/Widget.Button" />
 </LinearLayout>

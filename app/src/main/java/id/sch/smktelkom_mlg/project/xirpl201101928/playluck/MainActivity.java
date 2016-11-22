@@ -11,8 +11,6 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton d;
-    ImageButton r;
 
 
     @Override
@@ -20,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button db = (Button) this.findViewById(R.id.db);
-        Button dr = (Button) this.findViewById(R.id.dr);
+
         db.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,5 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(i);
             }
         });
-
+        Button dr = (Button) this.findViewById(R.id.dr);
+        dr.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this.getApplicationContext(), rps.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
 }}

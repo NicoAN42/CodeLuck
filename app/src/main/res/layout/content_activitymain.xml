@@ -46,35 +46,11 @@
             android:layout_height="match_parent"
             android:src="@drawable/rps"
 
-
             android:layout_gravity="left"
             android:scaleType="fitCenter"
             android:layout_weight="1"
             android:background="#FFFFFF"/>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.50">
-
-        <Button
-            android:text="Play"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/db"
-            android:layout_weight="1"
-            style="@android:style/Widget.Button" />
-
-        <Button
-            android:text="Play"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/dr"
-            android:layout_weight="1"
-            style="@android:style/Widget.Button" />
     </LinearLayout>
 
 
