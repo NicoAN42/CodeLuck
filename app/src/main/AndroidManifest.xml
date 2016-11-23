@@ -16,10 +16,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="id.sch.smktelkom_mlg.project.xirpl201101928.playluck.dice"
+            android:name=".dice"
             android:label="dice"
-            android:parentActivityName="id.sch.smktelkom_mlg.project.xirpl201101928.playluck.MainActivity" >
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".rps"></activity>
     </application>
 
 </manifest>
