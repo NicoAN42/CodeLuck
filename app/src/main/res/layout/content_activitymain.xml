@@ -32,7 +32,7 @@
         android:padding="20px">
 
         <ImageButton
-            android:id="@+id/dice"
+            android:id="@+id/home"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="right"

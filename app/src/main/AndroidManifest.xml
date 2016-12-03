@@ -20,6 +20,8 @@
             android:label="dice"
             android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".rps"></activity>
+        <activity android:name=".GridMenu"></activity>
     </application>
+    
 
 </manifest>

@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton dice;
-    ImageButton rps;
+    ImageButton home;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,16 +25,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addListenerOnButton() {
-        dice = (ImageButton) findViewById(R.id.dice);
+        home = (ImageButton) findViewById(R.id.home);
 
-        dice.setOnClickListener(new OnClickListener() {
+        home.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
 
                 Toast.makeText(MainActivity.this,
-                        "random DICE!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this, Book.class));
+                        "Hello", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, GridMenu.class));
             }
         });
 
