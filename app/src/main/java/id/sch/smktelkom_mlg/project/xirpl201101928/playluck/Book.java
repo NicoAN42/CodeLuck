@@ -8,8 +8,8 @@ public class Book {
     private final int name;
     private final int author;
     private final int imageResource;
+    private boolean isFavorite = false;
     private final String imageUrl;
-    private boolean isFavorite;
 
     public Book(int name, int author, int imageResource, String imageUrl) {
         this.name = name;
@@ -19,30 +19,27 @@ public class Book {
     }
 
     public int getName() {
-        return this.name;
+        return name;
     }
 
     public int getAuthor() {
-        return this.author;
+        return author;
     }
 
     public int getImageResource() {
-        return this.imageResource;
+        return imageResource;
     }
 
     public boolean getIsFavorite() {
-        return this.isFavorite;
+        return isFavorite;
     }
-
     public void setIsFavorite(boolean isFavorite) {
         this.isFavorite = isFavorite;
     }
 
     public void toggleFavorite() {
-        this.isFavorite = !this.isFavorite;
+        isFavorite = !isFavorite;
     }
 
-    public String getImageUrl() {
-        return this.imageUrl;
-    }
+    public String getImageUrl() { return imageUrl;  }
 }
