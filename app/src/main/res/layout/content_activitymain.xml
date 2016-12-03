@@ -40,17 +40,7 @@
             android:background="#FFFFFF"
 
             android:scaleType="fitCenter"
-            android:src="@drawable/dice" />
-
-        <ImageButton
-            android:id="@+id/rps"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:scaleType="fitCenter"
-            android:src="@drawable/rps" />
+            android:src="@drawable/home" />
 
     </LinearLayout>
 

@@ -34,18 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this,
                         "random DICE!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this, dice.class));
+                startActivity(new Intent(MainActivity.this, Book.class));
             }
         });
 
-        rps = (ImageButton) findViewById(R.id.rps);
 
-        rps.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(MainActivity.this, "Rock Paper Scissor", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this, rps.class));
-            }
-        });
 }}
