@@ -47,7 +47,7 @@ public class GridMenu extends AppCompatActivity{
                     startActivity(bw);
                 }
                 else if (i == 1) {
-                    Intent lay = new Intent(view.getContext(), menu2.class);
+                    Intent lay = new Intent(view.getContext(),menu2.class);
                     startActivity(lay);
                 }
             }

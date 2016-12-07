@@ -23,6 +23,8 @@
         <activity android:name=".GridMenu"></activity>
         <activity android:name=".menu1"
             android:label="Choose One"></activity>
+        <activity android:name=".menu2"
+            android:label="Choose One"></activity>
     </application>
     
 
