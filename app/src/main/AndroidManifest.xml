@@ -22,13 +22,15 @@
         <activity android:name=".rps"></activity>
         <activity android:name=".GridMenu"></activity>
         <activity android:name=".menu1"
-            android:label="Choose One"></activity>
+            android:label="Basic Widget"></activity>
         <activity android:name=".menu2"
-            android:label="Choose One"></activity>
+            android:label="Layout"></activity>
         <activity android:name=".menu3"
-            android:label="Choose One"></activity>
+            android:label="Butter Knife &amp; Data Binding"></activity>
         <activity android:name=".menu4"
-            android:label="Choose One"></activity>
+            android:label="Intent"></activity>
+        <activity android:name=".menu5"
+            android:label="Recycler View"></activity>
     </application>
     
 
