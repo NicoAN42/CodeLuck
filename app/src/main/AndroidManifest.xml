@@ -27,6 +27,8 @@
             android:label="Choose One"></activity>
         <activity android:name=".menu3"
             android:label="Choose One"></activity>
+        <activity android:name=".menu4"
+            android:label="Choose One"></activity>
     </application>
     
 
