@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.project.xirpl201101928.playluck;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +41,11 @@ public class GridMenu extends AppCompatActivity{
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String mapel = (String) adapterView.getItemAtPosition(i);
                 Toast.makeText(view.getContext(), "You'll learn " +mapel, Toast.LENGTH_SHORT).show();
+
+                if (i == 0) {
+                    Intent bw = new Intent(view.getContext(),menu1.class);
+                    startActivity(bw);
+                }
             }
         });
     }
