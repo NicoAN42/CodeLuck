@@ -35,7 +35,7 @@ public class menu1 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String pilih = (String) adapterView.getItemAtPosition(i);
-                Toast.makeText(view.getContext(), "You'll see the " +pilih+ "of Basic Widget", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You'll see the " +pilih+ " of Basic Widget", Toast.LENGTH_SHORT).show();
             }
         });
     }
