@@ -50,6 +50,18 @@ public class GridMenu extends AppCompatActivity{
                     Intent lay = new Intent(view.getContext(),menu2.class);
                     startActivity(lay);
                 }
+                else if (i == 2) {
+                    Intent bd = new Intent(view.getContext(),menu3.class);
+                    startActivity(bd);
+                }
+                else if (i == 3) {
+                    Intent itn = new Intent(view.getContext(),menu4.class);
+                    startActivity(itn);
+                }
+                else if (i == 4) {
+                    Intent rv = new Intent(view.getContext(),menu5.class);
+                    startActivity(rv);
+                }
             }
         });
     }
