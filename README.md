@@ -10,4 +10,5 @@ Screenshoot
 
 Hasil 1
 Tampilan awal ketika aplikasi dijalankan
+
 ![ScreenShoot](https://github.com/NicoAN42/CodeLuck/blob/master/homeTA.PNG "")
