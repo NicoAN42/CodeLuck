@@ -1,15 +1,13 @@
 package id.sch.smktelkom_mlg.project.xirpl201101928.playluck;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
 
 /**
  * Created by Aisyatush Shofiah on 03/12/2016.
@@ -22,7 +20,8 @@ public class GridMenu extends AppCompatActivity{
             "Layout",
             "Butter Knife & Data Binding",
             "Intent",
-            "Recycler View"
+            "Recycler View",
+            "How to make a simple game!"
     };
 
     @Override
@@ -61,6 +60,9 @@ public class GridMenu extends AppCompatActivity{
                 else if (i == 4) {
                     Intent rv = new Intent(view.getContext(),menu5.class);
                     startActivity(rv);
+                } else if (i == 5) {
+                    Intent gm = new Intent(view.getContext(), menu6.class);
+                    startActivity(gm);
                 }
             }
         });

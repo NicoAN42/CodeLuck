@@ -31,6 +31,9 @@
             android:label="Intent"></activity>
         <activity android:name=".menu5"
             android:label="Recycler View"></activity>
+        <activity
+            android:name=".menu6"
+            android:label="Simple Game"></activity>
     </application>
     
 
