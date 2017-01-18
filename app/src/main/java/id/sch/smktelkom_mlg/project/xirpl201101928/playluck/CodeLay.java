@@ -13,21 +13,22 @@ import android.widget.Toast;
  * Created by USER-ACER-PC on 03/12/2016.
  */
 
-public class menu1 extends AppCompatActivity {
+public class CodeLay extends AppCompatActivity {
 
-    String[] pilih = {
-            "Code",
-            "Program"
+    String[] listViewlay = {
+            "Manifest",
+            "XML",
+            "Java"
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu1);
+        setContentView(R.layout.activity_codelay);
 
-        ListView listView = (ListView) findViewById(R.id.pilihan);
+        ListView listView = (ListView) findViewById(R.id.listViewlay);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, pilih);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listViewlay);
 
         listView.setAdapter(adapter);
 
@@ -35,15 +36,19 @@ public class menu1 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String pilih = (String) adapterView.getItemAtPosition(i);
-                Toast.makeText(view.getContext(), "You'll see the " +pilih+ " of Basic Widget", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You'll see the " +pilih+ " code of Layout", Toast.LENGTH_SHORT).show();
 
                 if (i == 0) {
-                    Intent bwc = new Intent(view.getContext(),CodeBasic.class);
-                    startActivity(bwc);
+                    Intent lcm = new Intent(view.getContext(),Manifestlay.class);
+                    startActivity(lcm);
                 }
                 else if (i == 1) {
-                    Intent bwp = new Intent(view.getContext(),ProgBasic.class);
-                    startActivity(bwp);
+                    Intent lcx = new Intent(view.getContext(),XMLlay.class);
+                    startActivity(lcx);
+                }
+                else if (i == 2) {
+                    Intent lcj = new Intent(view.getContext(),Javalay.class);
+                    startActivity(lcj);
                 }
             }
         });

@@ -9,25 +9,22 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-/**
- * Created by USER-ACER-PC on 03/12/2016.
- */
+public class dicec extends AppCompatActivity {
 
-public class menu1 extends AppCompatActivity {
-
-    String[] pilih = {
-            "Code",
-            "Program"
+    String[] listViewdc = {
+            "Manifest",
+            "XML",
+            "Java"
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu1);
+        setContentView(R.layout.activity_codedice);
 
-        ListView listView = (ListView) findViewById(R.id.pilihan);
+        ListView listView = (ListView) findViewById(R.id.listViewdc);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, pilih);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listViewdc);
 
         listView.setAdapter(adapter);
 
@@ -35,15 +32,19 @@ public class menu1 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String pilih = (String) adapterView.getItemAtPosition(i);
-                Toast.makeText(view.getContext(), "You'll see the " +pilih+ " of Basic Widget", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You'll see the " +pilih+ " code of Dice Game", Toast.LENGTH_SHORT).show();
 
                 if (i == 0) {
-                    Intent bwc = new Intent(view.getContext(),CodeBasic.class);
-                    startActivity(bwc);
+                    Intent dm = new Intent(view.getContext(),Manifestdc.class);
+                    startActivity(dm);
                 }
                 else if (i == 1) {
-                    Intent bwp = new Intent(view.getContext(),ProgBasic.class);
-                    startActivity(bwp);
+                    Intent dx = new Intent(view.getContext(),XMLdc.class);
+                    startActivity(dx);
+                }
+                else if (i == 2) {
+                    Intent dj = new Intent(view.getContext(),Javadc.class);
+                    startActivity(dj);
                 }
             }
         });

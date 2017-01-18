@@ -20,6 +20,8 @@
             android:label="dice"
             android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".rps"></activity>
+        <activity android:name=".rpsc"></activity>
+        <activity android:name=".dicec"></activity>
         <activity android:name=".GridMenu"></activity>
         <activity android:name=".menu1"
             android:label="Basic Widget"></activity>
@@ -34,6 +36,57 @@
         <activity
             android:name=".menu6"
             android:label="Simple Game"></activity>
+        <activity
+            android:name=".CodeBasic"
+            android:label="Basic Widget"></activity>
+        <activity
+            android:name=".CodeLay"
+            android:label="Layout"></activity>
+        <activity
+            android:name=".CodeButter"
+            android:label="Butter Knife &amp; Data Binding"></activity>
+        <activity
+            android:name=".CodeInt"
+            android:label="Intent"></activity>
+        <activity
+            android:name=".CodeRV"
+            android:label="Recycler View"></activity>
+        <activity android:name=".Manifestbsc"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Manifestbtr"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Manifestint"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Manifestlay"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Manifestrv"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Manifestrps"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Javabsc"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Javabtr"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Javaint"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Javalay"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Javarv"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".Javarps"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".XMLbsc"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".XMLbtr"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".XMLint"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".XMLlay"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".XMLrv"
+            android:label="Basic Widget"></activity>
+        <activity android:name=".XMLrps"
+            android:label="Basic Widget"></activity>
     </application>
     
 

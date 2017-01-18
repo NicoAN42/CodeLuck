@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.project.xirpl201101928.playluck;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,7 +17,9 @@ public class menu6 extends AppCompatActivity {
 
     String[] pilihan = {
             "Rock, Paper, Scissors",
-            "Dice"
+            "The code of Rock, Paper, Scissors game",
+            "Dice",
+            "The code of Dice game"
     };
 
     @Override
@@ -34,7 +37,24 @@ public class menu6 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String pilihan = (String) adapterView.getItemAtPosition(i);
-                Toast.makeText(view.getContext(), "You'll see the " + pilihan + " of Recycler View", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You'll see the " + pilihan, Toast.LENGTH_SHORT).show();
+
+                if (i == 0) {
+                    Intent rps = new Intent(view.getContext(),rps.class);
+                    startActivity(rps);
+                }
+                else if (i == 1) {
+                    Intent rpsc = new Intent(view.getContext(),rpsc.class);
+                    startActivity(rpsc);
+                }
+                else if (i == 2) {
+                    Intent dice = new Intent(view.getContext(),dice.class);
+                    startActivity(dice);
+                }
+                else if (i == 3) {
+                    Intent dicec = new Intent(view.getContext(),dicec.class);
+                    startActivity(dicec);
+                }
             }
         });
     }
